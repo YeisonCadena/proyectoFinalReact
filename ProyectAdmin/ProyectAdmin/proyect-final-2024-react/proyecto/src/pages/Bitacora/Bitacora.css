@@ -1,0 +1,146 @@
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Georgia", serif; /* Tipografía elegante */
+  background-color: #ffeb3b; /* Brighter background color */
+  color: #1a202c; /* Darker text color for better contrast */
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Contenedor principal estilizado */
+.bitacora-container {
+  width: 60vw; /* Ocupa el 60% del ancho de la pantalla */
+  max-width: 1200px; /* Aumenta el ancho máximo */
+  padding: 2rem 4vw; /* Padding adicional para mayor orden */
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid #3182ce; /* Brighter border color */
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Encabezado estilizado */
+.bitacora-header {
+  text-align: center;
+  font-size: 2.5rem; /* Un poco más grande */
+  color: #1a202c; /* Darker header color */
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-family: "Georgia", serif;
+}
+
+.bitacora-header::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #ff5722; /* More vibrant underline */
+  margin: 0.75rem auto;
+  border-radius: 3px;
+}
+
+/* Formulario con diseño en grid */
+.bitacora-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  padding: 1rem;
+  background-color: #f7fafc; /* Slightly brighter form background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #cbd5e0; /* Borde gris suave */
+}
+
+.bitacora-form .full-width {
+  grid-column: 1 / 3;
+}
+
+/* Campos de formulario */
+.bitacora-form input[type="text"],
+.bitacora-form input[type="number"],
+.bitacora-form textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #a0aec0;
+  border-radius: 8px;
+  background-color: #e6fffa; /* Brighter input background */
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.bitacora-form input[type="text"]:hover,
+.bitacora-form input[type="number"]:hover,
+.bitacora-form textarea:hover {
+  border-color: #63b3ed; /* Azul claro al pasar el cursor */
+  background-color: #c4f1f9; /* Brighter hover background */
+}
+
+.bitacora-form input[type="text"]:focus,
+.bitacora-form input[type="number"]:focus,
+.bitacora-form textarea:focus {
+  border-color: #3182ce; /* Azul fuerte al enfocar */
+  background-color: #ffffff; /* Keep white background on focus */
+  outline: none;
+}
+
+/* Etiqueta estilizada */
+.bitacora-form label {
+  font-size: 1.1rem; /* Un poco más grande */
+  color: #1a202c; /* Darker label color */
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Color al pasar el cursor por encima */
+.bitacora-form label:hover {
+  color: #3182ce; /* Azul más oscuro al pasar el cursor */
+}
+
+/* Botón estilizado */
+.bitacora-form button {
+  grid-column: 1 / 3;
+  padding: 1rem 2rem;
+  background-color: #ff5722; /* More vibrant button color */
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bitacora-form button:hover {
+  background-color: #e64a19; /* Darker hover color */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .bitacora-form {
+    grid-template-columns: 1fr;
+  }
+
+  .bitacora-header {
+    font-size: 2rem;
+  }
+
+  .bitacora-form button {
+    grid-column: 1;
+  }
+}

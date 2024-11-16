@@ -1,0 +1,73 @@
+.bitacora-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f8f9fa; /* Light background color */
+    padding: 10px; /* Padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.bitacora-item:hover {
+    background-color: #e9ecef; /* Slightly darker background on hover */
+}
+
+.bitacora-item label {
+    flex: 1;
+    margin-right: 20px;
+    font-weight: bold;
+    color: #2c3e50; /* Un color oscuro elegante para el texto */
+    font-size: 1.1rem;
+}
+
+.bitacora-item input,
+.bitacora-item button,
+.bitacora-item textarea,
+.react-datepicker-wrapper {
+    flex: 3;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    background-color: #ffffff;
+    color: #495057;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra suave para dar relieve */
+    transition: all 0.3s ease-in-out;
+}
+
+.bitacora-item input:hover,
+.bitacora-item button:hover,
+.bitacora-item textarea:hover,
+.react-datepicker-wrapper:hover {
+    border-color: #17a2b8; /* Color turquesa suave para hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada en hover */
+}
+
+.bitacora-item input:focus,
+.bitacora-item button:focus,
+.bitacora-item textarea:focus,
+.react-datepicker-wrapper:focus-within {
+    border-color: #28a745; /* Verde suave para enfoque */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al hacer focus */
+    outline: none; /* Sin borde azul */
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3; /* Color más oscuro en hover */
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical; /* Permite que el usuario ajuste el tamaño vertical */
+}

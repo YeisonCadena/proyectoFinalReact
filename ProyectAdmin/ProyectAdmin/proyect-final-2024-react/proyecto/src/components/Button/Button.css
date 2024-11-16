@@ -1,0 +1,33 @@
+.guardar-btn {
+    background-color: #2d3748; /* Gris oscuro sobrio */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Efecto hover */
+.guardar-btn:hover {
+    background-color: #1a202c; /* Gris más oscuro */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra aumentada */
+}
+
+/* Efecto active */
+.guardar-btn:active {
+    background-color: #2a303b; /* Gris más oscuro */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Sombra reducida */
+    transform: scale(0.98); /* Efecto de clic */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .guardar-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

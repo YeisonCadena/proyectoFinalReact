@@ -1,0 +1,16 @@
+.bitacora-item {
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa; /* Light background color */
+    padding: 10px; /* Padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.bitacora-item:hover {
+    background-color: #e9ecef; /* Slightly darker background on hover */
+}
+

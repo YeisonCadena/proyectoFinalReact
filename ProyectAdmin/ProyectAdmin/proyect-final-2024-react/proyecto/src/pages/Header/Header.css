@@ -1,0 +1,37 @@
+.header-form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .title-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .title-form input {
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .title-form button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .title-form button:hover {
+    background-color: #45a049;
+  }
+  

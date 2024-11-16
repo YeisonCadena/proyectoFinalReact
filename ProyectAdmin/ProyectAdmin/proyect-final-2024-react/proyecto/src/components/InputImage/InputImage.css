@@ -1,0 +1,21 @@
+input[type="file"] {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f4f6f8;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="file"]:hover {
+    border-color: #007bff; /* Blue border on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* More pronounced shadow on hover */
+}
+
+input[type="file"]:focus {
+    border-color: #28a745; /* Green border on focus */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow on focus */
+    outline: none;
+}
